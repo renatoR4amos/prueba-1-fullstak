@@ -32,11 +32,10 @@ public class TareasController {
 
     
     @GetMapping("/buscar/{tipo}")
-    public List<Tareas> buscar(@PathVariable String tipo) {
-        return tareasService.filtrarPorResponsable(tipo);
+    public List<Tareas> buscar(@PathVariable String responsable) {
+        return tareasService.filtrarPorResponsable(responsable);
     }
-
-    // 4. ELIMINAR: Usamos DELETE enviando el ID
+    
     @DeleteMapping("/eliminar/{id}")
     public String eliminar(@PathVariable int id) {
         tareasService.borrarTarea(id);
