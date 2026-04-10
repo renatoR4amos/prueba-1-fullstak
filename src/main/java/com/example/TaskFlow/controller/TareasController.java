@@ -21,7 +21,7 @@ public class TareasController {
     @PostMapping("/registrar")
     public String registrar(@Valid @RequestBody Tareas e) {
         tareasService.registrarTarea(e);
-        return "tarea registrada.";
+        return "Tarea registrada.";
     }
 
    
