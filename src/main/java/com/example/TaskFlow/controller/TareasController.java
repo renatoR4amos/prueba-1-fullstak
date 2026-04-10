@@ -21,7 +21,7 @@ public class TareasController {
     @PostMapping("/registrar")
     public String registrar(@Valid @RequestBody Tareas e) {
         tareasService.registrarTarea(e);
-        return "tarea registrada";
+        return "tarea registrada.";
     }
 
    
@@ -35,11 +35,11 @@ public class TareasController {
     public List<Tareas> buscar(@PathVariable String responsable) {
         return tareasService.filtrarPorResponsable(responsable);
     }
-    
+
     @DeleteMapping("/eliminar/{id}")
     public String eliminar(@PathVariable int id) {
         tareasService.borrarTarea(id);
-        return "tarea eliminada";
+        return "tarea eliminada.";
     }
     
     @PutMapping("/actualizar/{id}")

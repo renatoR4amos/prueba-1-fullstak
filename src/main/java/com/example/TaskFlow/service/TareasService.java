@@ -43,7 +43,7 @@ public class TareasService {
          if (exito) {
              return "tarea actualizada exitosamente";
          }
-         return "tarea no encontrada";
+         return "tarea no encontrada.";
      }
  
  

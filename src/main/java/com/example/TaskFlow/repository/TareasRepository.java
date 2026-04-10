@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 
-import com.example.TaskFlow.model.Tareas;
+import com.example.TaskFlow.model.Tareas;//wñriufhw
 
 @Repository
 public class TareasRepository {

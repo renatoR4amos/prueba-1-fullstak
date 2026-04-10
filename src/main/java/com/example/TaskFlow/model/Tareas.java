@@ -17,7 +17,7 @@ public class Tareas {
     @NotBlank(message = "La descricion no puede estar vacia") 
     private String descripcion;
 
-    @NotBlank(message = "el estado es obligatorio")
+    @NotBlank(message = "el estado es obligatorio.")
     private String estadoTarea;
 
     @Min(value = 1, message = "la prioridad no puede sser menor a 1") 
